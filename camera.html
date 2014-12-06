@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=7; IE=EmulateIE9; IE=10" />
+  <meta name="keywords" content="loadCrossDomainKMLFile,onKMLParsed,onKMLFileLoaded,onKMLFileLoadError,locateUser,makeRouteRequest,onRouteCalculated" />
+  <title>Here I Go!</title>
+  	
+    
+	
+		<script src="js/jquery.modal.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/jquery.modal.css" type="text/css" media="screen" />
+
+  
+  <script type="text/javascript" src="libs/hereAppIdAndToken.js"></script>
+  <script type="text/javascript" src="libs/jQl.min.js"></script>
+
+  <!-- Asynchronously the HERE Maps API for JavaScript -->
+  <script type="text/javascript" src="libs/hereAsyncLoader.js"
+    id="HereMapsLoaderScript" 
+    data-params="maps,datarendering" 
+    data-map-container="mapContainer"
+    data-callback="afterHereMapLoad">
+  </script>
+  
+  
+  <link rel="icon" href="http://here.com/favicon.ico"/>
+
+  <style type="text/css">
+	.modal{
+
+  width: 80%;
+  height:70%;
+ 
+}
+td{
+width:45%;
+}
+
+.mypop{
+
+background: url(images/r.png) no-repeat center center fixed; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				
+				}
+
+  </style>
+</head>
+<body>
+
+<div data-role="page" id="camera">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<center><img src="images/banner.png" width="50%"/></center>
+	</div>
+	<div data-role="content" class="jqm-content" align="center">
+<p id="status" style="color:red">
+			<noscript>JavaScript is disabled.</noscript>
+		</p>
+</div>
+
+
+	
+</div>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
