@@ -298,7 +298,7 @@ var type=window.localStorage.getItem("type");
   jQuery.support.cors = true;
   $.ajax({
     type: 'GET',
-    url: 'kml/phpsql_genkml3.php?type='+type,
+    url: 'http://gordoncollege-library.com/camera/kml/phpsql_genkml3.php?type='+type,
     dataType: 'xml',
     success: onKMLFileLoaded,
     error : onKMLFileLoadError
